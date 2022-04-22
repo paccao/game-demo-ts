@@ -22,5 +22,7 @@ app.get('/', (req: Request, res: Response) => {
 })
 
 app.listen(port, () => {
-	console.log(`Server up and running on port ${port}`)
+	console.log(`Server up and running on port ${port}.`)
+	console.log(`
+	http://localhost:8080/`)
 })
