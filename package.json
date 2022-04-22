@@ -1,0 +1,5 @@
+{
+	"scripts": {
+		"s": "bash ./scripts/runDev.sh"
+	}
+}

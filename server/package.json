@@ -1,6 +1,8 @@
 {
+  "main": "index.ts",
+  "author": "Joel Plumppu",
   "scripts": {
-    "dev": "NODE_ENV=development nodemon index.ts"
+    "dev": "nodemon --exec npx ts-node index.ts"
   },
   "dependencies": {
     "cors": "^2.8.5",
