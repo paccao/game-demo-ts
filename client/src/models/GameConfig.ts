@@ -1,10 +1,13 @@
-export interface Config extends Phaser.Types.Scenes.SettingsConfig {
-	type: number
-	width: number
-	height: number
+export interface InternalConfig extends Phaser.Types.Scenes.SettingsConfig {
+	type: number | undefined
 	physics?: Physics
 	scene?: Scene | any
 	parent?: string
+}
+
+export interface Config extends Phaser.Types.Scenes.SettingsConfig {
+	width: number
+	height: number
 }
 
 interface Physics {
