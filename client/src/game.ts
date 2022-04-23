@@ -1,5 +1,5 @@
 import Phaser from 'phaser'
-import { Config, InternalConfig } from '../models/GameConfig'
+import { Config } from './models/GameConfig'
 import logoImg from '../assets/logo.png'
 
 class MyGameScene extends Phaser.Scene {
@@ -33,19 +33,11 @@ class MyGameScene extends Phaser.Scene {
 	}
 }
 
-const config: InternalConfig = {
+const config: Config = {
 	type: Phaser.AUTO,
 	scene: MyGameScene,
+	width: 800,
+	height: 600,
 }
 
-export function setConfig(configObj: Config) {
-	const defaultObj = {
-		type: Phaser.AUTO,
-		scene: MyGameScene,
-	}
-	return {
-		...defaultObj,
-		width: configObj.width,
-		height: configObj.height,
-	}
-}
+const game = new MyGameScene()
