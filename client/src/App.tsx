@@ -1,6 +1,12 @@
-import styled, { css } from 'styled-components'
+import { useEffect } from 'react'
+import styled from 'styled-components'
+import { setConfig } from './helpers/initGame'
 
 function App() {
+	useEffect(() => {
+		setConfig({ width: 800, height: 600 })
+	}, [])
+
 	return <Main className="App"></Main>
 }
 
