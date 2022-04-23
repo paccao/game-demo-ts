@@ -17,6 +17,7 @@ interface Arcade {
 }
 
 interface Gravity {
+	x: number
 	y: number
 }
 
