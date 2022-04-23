@@ -1,9 +1,10 @@
-export interface Config {
+export interface Config extends Phaser.Types.Scenes.SettingsConfig {
 	type: number
 	width: number
 	height: number
-	physics: Physics
-	scene: Scene
+	physics?: Physics
+	scene?: Scene | any
+	parent?: string
 }
 
 interface Physics {
@@ -19,11 +20,11 @@ interface Gravity {
 	y: number
 }
 
-interface Scene {
+export interface Scene {
 	preload: VoidFunc
 	create: VoidFunc
 }
 
-export interface VoidFunc {
+interface VoidFunc {
 	(): void
 }
