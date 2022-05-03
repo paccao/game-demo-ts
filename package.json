@@ -1,5 +1,6 @@
 {
 	"scripts": {
+		"i": "bash ./scripts/installDeps.sh",
 		"s": "bash ./scripts/runDev.sh"
 	}
 }
